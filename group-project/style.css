@@ -1,0 +1,177 @@
+/* style.css - all styling for the DREAM AFTER DREAM SMini site */
+
+body {
+  margin: 0;
+  background-color: #f4f8f2;
+  color: #23301f;
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #2f5d3a;
+  margin: 0 0 10px 0;
+}
+
+h1 { font-size: 29px; letter-spacing: 1px; }
+h2 { font-size: 21px; }
+
+h3 {
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #6f9c50;
+  margin: 16px 0 6px 0;
+}
+
+.site-header {
+  background-color: #2f5d3a;
+  background-image: linear-gradient(135deg, #2f5d3a 0%, #6f9c50 100%);
+  color: #f3f8ef;
+  padding: 30px 20px 24px 20px;
+}
+
+.site-header h1 { color: #ffffff; }
+
+.tagline {
+  margin: 0;
+  font-size: 14px;
+  color: #dbead0;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background-color: #ffffff;
+  padding: 12px 20px;
+  border-bottom: 1px solid #dfe9d7;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #2f5d3a;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background-color: #e8f0e3;
+  transition: background-color 0.2s;
+}
+
+.site-nav a:hover { background-color: #d8e6cf; }
+
+.site-nav a.active {
+  background-color: #6f9c50;
+  color: #ffffff;
+}
+
+main {
+  max-width: 780px;
+  margin: 26px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #dfe9d7;
+  border-radius: 16px;
+  padding: 22px 24px;
+  margin-bottom: 18px;
+  box-shadow: 0 3px 10px rgba(47, 93, 58, 0.06);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 6px 18px rgba(47, 93, 58, 0.12);
+  transform: translateY(-2px);
+}
+
+.card p { margin: 0 0 10px 0; }
+
+.hero { border-left: 5px solid #6f9c50; }
+.note { border-left: 5px solid #a78b50; background-color: #fafcf7; }
+
+.photo { margin: 14px 0 6px 0; }
+
+.photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #dfe9d7;
+  transition: transform 0.25s;
+}
+
+.photo img:hover { transform: scale(1.01); }
+
+.photo figcaption {
+  font-size: 13px;
+  color: #7b8b76;
+  margin-top: 6px;
+  text-align: center;
+}
+
+ul, ol { margin: 0 0 4px 20px; padding: 0; }
+li { margin-bottom: 6px; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px dashed #dfe9d7;
+}
+
+th {
+  background-color: #f0f6ec;
+  color: #2f5d3a;
+}
+
+tbody tr:hover { background-color: #f7fbf4; }
+
+.back-to-top {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 10px 26px;
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #6f9c50;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(47, 93, 58, 0.2);
+  transition: background-color 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+
+.back-to-top:hover {
+  background-color: #2f5d3a;
+  box-shadow: 0 4px 12px rgba(47, 93, 58, 0.3);
+}
+
+.back-to-top:active { transform: translateY(1px); }
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #7b8b76;
+  padding: 22px;
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 23px; }
+  .site-header { padding: 22px 16px 18px 16px; }
+  main { padding: 0 14px; }
+  .card { padding: 18px; }
+  table { font-size: 14px; }
+}
